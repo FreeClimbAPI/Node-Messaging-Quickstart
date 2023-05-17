@@ -8,12 +8,17 @@ const freeclimbSDK = require('@freeclimb/sdk')
 const port = process.env.PORT || 80
 const accountId = process.env.ACCOUNT_ID
 const apiKey = process.env.API_KEY
-const freeclimb = freeclimbSDK(accountId, apiKey)
+const freeclimbConfig = freeclimbSDK.createConfiguration({accountId, apiKey})
+const apiInstance = new freeclimbSDK.DefaultApi(freeclimbConfig);
 
 app.post('/incomingSms', (req, res) => {
-  let to = 'example to number'
-  let from = 'example from number'
-  freeclimb.api.messages.create(from, to, 'Hey! It is your application!').catch(err => {console.log(err)})
+    const { from: userPhoneNumber } = req.body
+    const messageRequest = {
+      _from: '', // Your FreeClimb Number 
+      to: userPhoneNumber,
+      text: 'Hello World!'
+    }
+  apiInstance.sendAnSmsMessage(messageRequest).catch(err => {console.log(err)})
 })
 
 // Specify this route with 'Status Callback URL' in App Config
