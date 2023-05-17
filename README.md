@@ -21,13 +21,11 @@ A [configured FreeClimb number](https://docs.freeclimb.com/docs/getting-and-conf
 Trial accounts: a [verified number](https://docs.freeclimb.com/docs/using-your-trial-account#verifying-outbound-numbers)
 
 Tools:
-{Language specific but an example of Node.js is below}
 - [Node.js](https://nodejs.org/en/download/) 12.14.0 or higher
 - [Yarn](https://yarnpkg.com/en/)
 - [ngrok](https://ngrok.com/download) (recommended for hosting)
 
 ## Setting up the Quickstart
-{Language specific but an example of Node.js is below}
 1. Install the required packages
 
     ```bash
