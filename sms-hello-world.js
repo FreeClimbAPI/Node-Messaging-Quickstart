@@ -12,8 +12,8 @@ const freeclimbConfig = freeclimbSDK.createConfiguration({accountId, apiKey})
 const apiInstance = new freeclimbSDK.DefaultApi(freeclimbConfig);
 
 app.post('/incomingSms', (req, res) => {
-    let { from: userPhoneNumber } = req.body
-    messageRequest = {
+    const { from: userPhoneNumber } = req.body
+    const messageRequest = {
       _from: '', // Your FreeClimb Number 
       to: userPhoneNumber,
       text: 'Hello World!'
