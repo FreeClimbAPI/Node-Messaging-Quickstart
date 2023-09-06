@@ -1,6 +1,7 @@
 {
   "name": "node-receive-a-message-tutorial",
   "version": "1.0.0",
+  "license":"MIT",
   "scripts": {
     "start": "node sms-hello-world.js"
   },
