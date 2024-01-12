@@ -9,7 +9,7 @@ Specifically, the project will:
 
 ## Tutorial
 
-We offer a [Node SMS Quickstart Tutorial](https://docs.freeclimb.com/docs/how-to-receive-a-message#section-nodejs) for more detailed set-up instructions and explanation of how FreeClimb works.
+We offer a [Node SMS Quickstart Tutorial](https://docs.freeclimb.com/docs/nodejs-messaging-quickstart) for more detailed set-up instructions and explanation of how FreeClimb works.
 
 ## Requirements
 
@@ -35,7 +35,7 @@ Tools:
    yarn install
    ```
 
-2. Configure environment variables in .env file:
+2. Configure environment variables in seperate .env file:
 
    | ENV VARIABLE | DESCRIPTION                                                                                                                            |
    | ------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
@@ -57,7 +57,7 @@ Tools:
 5. [Configure your applications's endpoints](https://docs.freeclimb.com/docs/registering-and-configuring-an-application#configure-your-application) by adding a publicly accessible URL (we recommend an [ngrok](https://ngrok.com/download) URL) and the route reference `/incomingSms` to your App Config's SMS URL field:
 
    ```bash
-   https://YOUR-URL.ngrok.io/incomingSms
+   https://fb6f-63-209-137-19.ngrok-free.app/incomingSms
    ```
 
 ## Running the Quickstart
