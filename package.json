@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license":"MIT",
   "scripts": {
-    "start": "node sms-hello-world.js"
+    "start": "node index.js"
   },
   "dependencies": {
     "@freeclimb/sdk": "^3.4.0",
