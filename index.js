@@ -18,7 +18,7 @@ app.post('/incomingSms', (req, res) => {
   const messageRequest = {
     _from: fromNumber, // Your FreeClimb Number 
     to: userPhoneNumber,
-    text: 'Hello World!'
+    text: 'Hello, World!'
   }
   apiInstance.sendAnSmsMessage(messageRequest).catch(err => { console.log(err) })
 })
