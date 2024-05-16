@@ -20,7 +20,14 @@ app.post('/incomingSms', (req, res) => {
     to: userPhoneNumber,
     text: 'Hello, World!'
   }
-  apiInstance.sendAnSmsMessage(messageRequest).catch(err => { console.log(err) })
+  apiInstance.sendAnSmsMessage(messageRequest)
+    .then(() => {
+      res.sendStatus(200);
+    })
+    .catch(err => {
+      console.log(err)
+      res.sendStatus(500)
+    })
 })
 
 // Specify this route with 'Status Callback URL' in App Config
