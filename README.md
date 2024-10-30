@@ -1,6 +1,6 @@
-# Node SMS Quickstart
+# Node Messaging Quickstart
 
-This quickstart serves as a guide to get your first SMS application up and running with [FreeClimb](https://docs.freeclimb.com/docs/how-freeclimb-works).
+This quickstart serves as a guide to get your first Messaging application up and running with [FreeClimb](https://docs.freeclimb.com/docs/how-freeclimb-works).
 
 Specifically, the project will:
 
@@ -9,7 +9,7 @@ Specifically, the project will:
 
 ## Tutorial
 
-We offer a [Node SMS Quickstart Tutorial](https://docs.freeclimb.com/docs/how-to-receive-a-message#section-nodejs) for more detailed set-up instructions and explanation of how FreeClimb works.
+We offer a [Node Messaging Quickstart Tutorial](https://docs.freeclimb.com/docs/how-to-receive-a-message#section-nodejs) for more detailed set-up instructions and explanation of how FreeClimb works.
 
 ## Requirements
 
