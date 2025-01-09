@@ -36,6 +36,16 @@ app.post('/status', (req, res) => {
   res.status(200)
 })
 
+// Liveness probe endpoint
+app.get("/live", (req, res) => {
+  res.status(200).json({ status: "live" });
+});
+
+// Readiness probe endpoint
+app.get("/ready", (req, res) => {
+  res.status(200).json({ status: "ready" });
+});
+
 app.listen(port, () => {
   const localUrl = `http://127.0.0.1:${port}`
   console.log(`\nWelcome to FreeClimb!\n`);
